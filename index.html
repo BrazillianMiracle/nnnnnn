@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Joel Bento - Inteligência em Investimentos</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/3.0.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        /* ESTILOS GERAIS - BASEADO NO GUSTAVO CERBASI */
+        :root {
+            --primary-gold: #da9e57;
+            --dark-bg: #2f2f38;
+            --text-gray: #444;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Poppins', sans-serif; margin: 0; color: var(--text-gray); overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .btn { background: var(--primary-gold); color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: #b88243; }
+
+        /* CABEÇALHO */
+        header#cabecalho { padding: 20px 0; border-bottom: 1px solid #eee; background: #fff; position: sticky; top: 0; z-index: 1000; }
+        .logo h1 { color: var(--primary-gold); margin: 0; font-size: 24px; text-transform: uppercase; }
+        nav.navegacao ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: flex-end; }
+        nav.navegacao ul li { margin-left: 25px; }
+        nav.navegacao ul li a { text-decoration: none; color: var(--text-gray); font-weight: 500; }
+
+        /* BANNERS */
+        #banner .item img { width: 100%; height: 500px; object-fit: cover; }
+
+        /* SEÇÃO SOBRE */
+        #inicial-sobre { padding: 80px 0; background: #f9f9f9; }
+        .titulo h4 { color: var(--primary-gold); margin-bottom: 5px; text-transform: uppercase; }
+        .titulo h1.detalhe { font-size: 48px; margin-top: 0; color: var(--dark-bg); }
+        .imagem-perfil img { width: 100%; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .texto-sobre { font-size: 18px; line-height: 1.8; }
+
+        /* CURSOS / CTA */
+        #semana-inteligencia-financeira { background: var(--dark-bg); color: white; padding: 60px 0; position: relative; text-align: center; }
+        #semana-inteligencia-financeira .detalhe-laranja { background: var(--primary-gold); height: 10px; width: 150px; margin: 0 auto 20px; }
+
+        /* LIVROS / PRODUTOS */
+        #inicial-livros { padding: 80px 0; }
+        .item-livro { text-align: center; padding: 15px; }
+        .item-livro img { max-width: 100%; height: 300px; object-fit: contain; margin-bottom: 15px; }
+        .item-livro h3 { font-size: 16px; min-height: 40px; }
+
+        /* PALESTRAS */
+        #mais-palestras { background: #1a1a1d; color: white; padding: 80px 0; }
+        .card-palestra { background: #252526; margin-bottom: 20px; position: relative; overflow: hidden; }
+        .card-palestra img { width: 100%; transition: 0.5s; }
+        .card-palestra:hover img { transform: scale(1.1); }
+        .card-palestra .info { padding: 20px; }
+
+        /* WHATSAPP FLUTUANTE */
+        .whatsapp-fixo { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50px; text-align: center; line-height: 60px; font-size: 30px; z-index: 9999; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); }
+
+        /* FOOTER */
+        footer { background: #eee; padding: 60px 0 20px; margin-top: 50px; }
+        .redes-sociais ul { list-style: none; padding: 0; display: flex; }
+        .redes-sociais ul li { margin-right: 15px; font-size: 20px; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/5562999130335?text=Quero%20garantir%20minha%20vaga%20na%20próxima%20excursão" class="whatsapp-fixo" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header id="cabecalho">
+        <div class="container">
+            <div class="pure-g" style="align-items: center;">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <div class="logo"><h1>JOEL BENTO</h1></div>
+                </div>
+                <div class="pure-u-1 pure-u-md-2-3">
+                    <nav class="navegacao">
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#livros">Publicações</a></li>
+                            <li><a href="#palestras">Palestras</a></li>
+                            <li><a href="#cursos">Cursos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner" class="owl-carousel owl-theme">
+            <div class="item"><img src="images/1.jpg" alt="Investimentos com Joel Bento"></div>
+            <div class="item"><img src="images/2.jpg" alt="Mentoria Financeira"></div>
+        </section>
+
+        <section id="inicial-sobre">
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <div class="imagem-perfil">
+                            <img src="images/3.jpg" alt="Joel Bento">
+                        </div>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-2-3">
+                        <div style="padding-left: 40px;">
+                            <header class="titulo">
+                                <h4>Especialista em Finanças</h4>
+                                <h1 class="detalhe">Joel Bento</h1>
+                            </header>
+                            <div class="texto-sobre">
+                                <p>Com anos de experiência no mercado financeiro, Joel Bento consolidou-se como uma das maiores autoridades em **estratégias de investimentos e gestão de patrimônio**.</p>
+                                <p>Sua metodologia foca na construção de riqueza sustentável, unindo conhecimento técnico profundo com uma visão prática do mercado de ações, renda fixa e fundos imobiliários. Como consultor e palestrante, Joel já transformou a vida de milhares de investidores que buscam a independência financeira com segurança.</p>
+                                <a href="#" class="btn">MINHA TRAJETÓRIA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="semana-inteligencia-financeira">
+            <div class="detalhe-laranja"></div>
+            <div class="container">
+                <h2>Mentoria Investimentos 360°</h2>
+                <p>Aprenda a montar sua carteira de investimentos com acompanhamento direto de Joel Bento.</p>
+                <a href="https://wa.me/5562999130335" class="btn" style="font-size: 20px;">QUERO ME INSCREVER AGORA</a>
+            </div>
+        </section>
+
+        <section id="inicial-livros">
+            <div class="container">
+                <header class="titulo" style="text-align: center;">
+                    <h4>Publicações</h4>
+                    <h2>Conheça as Obras de Joel Bento</h2>
+                </header>
+                <div id="galeria-livros" class="owl-carousel owl-theme">
+                    <div class="item-livro">
+                        <img src="images/4.jpg">
+                        <h3>Investindo do Zero</h3>
+                    </div>
+                    <div class="item-livro">
+                        <img src="images/5.jpg">
+                        <h3>A Bíblia dos Dividendos</h3>
+                    </div>
+                    <div class="item-livro">
+                        <img src="images/6.jpg">
+                        <h3>Riqueza com Propósito</h3>
+                    </div>
+                    <div class="item-livro">
+                        <img src="images/7.jpg">
+                        <h3>A Mentalidade do Milhão</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mais-palestras">
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <header class="titulo">
+                            <h4 style="color: var(--primary-gold);">Eventos</h4>
+                            <h2 style="color: white;">Palestras de Impacto</h2>
+                            <p>Conteúdo exclusivo para empresas, congressos e grupos de investidores.</p>
+                        </header>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-2-3">
+                        <div class="pure-g">
+                            <div class="pure-u-1-2">
+                                <div class="card-palestra">
+                                    <img src="images/8.jpg">
+                                    <div class="info">
+                                        <h3>Estratégias Avançadas</h3>
+                                        <a href="#" style="color: var(--primary-gold);">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2">
+                                <div class="card-palestra" style="margin-left: 10px;">
+                                    <img src="images/9.jpg">
+                                    <div class="info">
+                                        <h3>Gestão de Risco Profissional</h3>
+                                        <a href="#" style="color: var(--primary-gold);">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <div class="logo"><h1>JOEL BENTO</h1></div>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <nav class="redes-sociais">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <p>© 2026 Joel Bento - Todos os direitos reservados.</p>
+                    <p>Desenvolvido por Juntos Somos Fortes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Inicialização do Banner Principal
+            $('#banner').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                nav: true,
+                dots: false,
+                autoplayTimeout: 5000
+            });
+
+            // Inicialização da Galeria de Livros
+            $('#galeria-livros').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: { items: 2 },
+                    600: { items: 3 },
+                    1000: { items: 4 }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
